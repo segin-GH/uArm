@@ -1,9 +1,20 @@
-#include <Arduino.h>
+# include <Arduino.h>
+# include <Servo.h>
 
-void setup() {
-  // put your setup code here, to run once:
+Servo servoZero;
+int servoZeroPin = 2;
+Servo servoOne;
+int servoOnePin = 3;
+
+void setup()
+{
+  Serial.begin(9600);
+  servoZero.attach(servoZeroPin);
+  servoOne.attach(servoOnePin);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
+  servoZero.write(70);
+  servoOne.write(90);
 }
