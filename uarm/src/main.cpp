@@ -44,4 +44,7 @@ void loop()
   int left_joystick_y_value = analogRead(left_joystick_y);
   int right_joystick_x_value = analogRead(right_joystick_x);
   int right_joystick_y_value = analogRead(right_joystick_y);
+  
+
+
 }
