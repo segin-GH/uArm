@@ -8,18 +8,18 @@ reciveArdData = serial.Serial('/dev/ttyACM0',115200)
 time.sleep(1)
 
 
-# def sendArduinoData(sendData):
-#     sendData = sendData + '\r'
-#     print(sendData)
-#     sendArdData.write(sendData.encode())
+def sendArduinoData(sendData):
+    sendData = sendData + '\r'
+    print(sendData)
+    sendArdData.write(sendData.encode())
 
-# def reciveArduinoData():
-#     while(reciveArdData.inWaiting() == 0):
-#         pass
-#     reciveDataPacket = reciveArdData.readline()
-#     reciveDataPacket = str(reciveDataPacket,'utf-8')
-#     reciveDataPacket = reciveDataPacket.strip('\r\n')
-#     return reciveDataPacket
+def reciveArduinoData():
+    while(reciveArdData.inWaiting() == 0):
+        pass
+    reciveDataPacket = reciveArdData.readline()
+    reciveDataPacket = str(reciveDataPacket,'utf-8')
+    reciveDataPacket = reciveDataPacket.strip('\r\n')
+    return reciveDataPacket
 
 
 while True:
