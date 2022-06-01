@@ -37,9 +37,7 @@ void loop ()
    
 }
 
-int getCoordinates (uint8_t x, uint8_t y, uint8_t z)
+int autoHome ()
 {
-  Serial.print("Enter the X coordinate : ");
-  
   
 }
