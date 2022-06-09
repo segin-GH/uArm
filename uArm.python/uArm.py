@@ -8,12 +8,11 @@ reciveArdData = serial.Serial('/dev/ttyACM0',115200)
 time.sleep(1)
 
 
-def sendArduinoData(sendData):
+def sendToArduino(sendData):
     sendData = sendData + '\r'
-    print(sendData)
     sendArdData.write(sendData.encode())
 
-def reciveArduinoData():
+def reciveFromArduino():
     while(reciveArdData.inWaiting() == 0):
         pass
     reciveDataPacket = reciveArdData.readline()
@@ -28,9 +27,12 @@ while True:
 
     if (cmd == "G10"):
         print(" OK.")
-        print(" INITIALIZING AUTO HOME ")
-        cmd = cmd + ('\r')
-        sendArdData.write(cmd.encode())
+        print(" INITIALIZING autoHome ")
+        sendToArduino("G10")
+        datapacket = reciveFromArduino()
+        while(datapacket == 0):
+            pass
+        print(datapacket)
 
         
 

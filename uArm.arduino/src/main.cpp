@@ -15,18 +15,19 @@
 # include <Servo.h>
 # include <string.h>
 
-// const uint16_t spr = 2048;
-// const uint8_t stepperSpeed = 10;
-// Stepper baseStepper (spr,8,10,9,11);
+const uint16_t spr = 2048;
+const uint8_t stepperSpeed = 10;
+Stepper baseStepper (spr,8,10,9,11);
 
 // const uint8_t foreArmServoPin = 2;
 // const uint8_t upperArmServoPin = 3;
 // Servo upperArmServo;
 // Servo foreArmServo;
 
-String reciveArduinoData;
+String recivePythonData;
 
-void sendArduinoData(String data);
+void sendToPython(String data);
+String reciveFromPython();
 
 bool autoHome();
 bool autoHomeStatus;
@@ -34,8 +35,8 @@ bool autoHomeStatus;
 void setup()
 {
   Serial.begin(115200);
-  //Serial.setTimeout(10);
-  // baseStepper.setSpeed(stepperSpeed);
+  Serial.setTimeout(10);
+  baseStepper.setSpeed(stepperSpeed);
   // upperArmServo.attach(upperArmServoPin);
   // foreArmServo.attach(foreArmServoPin);
   pinMode(13,OUTPUT);
@@ -49,15 +50,15 @@ void loop ()
     // do nothing
   }
 
-  reciveArduinoData = Serial.readStringUntil('\r');
-  //char firstcharacter = reciveArduinoData[0];
+  recivePythonData = reciveFromPython();
+  char firstcharacter = recivePythonData[0];
 
-    if (reciveArduinoData == "G10")
+    if (firstcharacter == 'G')
     {
       autoHomeStatus = autoHome();
         if (autoHomeStatus == true)
         {
-          sendArduinoData("AUTO HOME COMPLET.");
+          sendToPython(" autoHome COMPLET.");
         }
     }
 
@@ -75,10 +76,18 @@ void loop ()
 bool autoHome()
 {
   digitalWrite(13,HIGH);
+  delay(1000);
   
   return true;
 }
-void sendArduinoData(String data)
+void sendToPython(String data)
 {
   Serial.println(data);
+}
+
+String reciveFromPython()
+{
+  recivePythonData = Serial.readStringUntil('\r');
+  return recivePythonData;
+
 }
