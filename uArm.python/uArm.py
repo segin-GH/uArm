@@ -27,7 +27,7 @@ while True:
 
     if (cmd == "G10"):
         print(" OK.")
-        print(" INITIALIZING autoHome ")
+        print(" INITIALIZING AUTOHOME ")
         sendToArduino("G10")
         datapacket = reciveFromArduino()
         while(datapacket == 0):
