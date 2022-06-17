@@ -47,7 +47,7 @@ void loop ()
   recivedPythonData = reciveFromPython();
   char firstCharacter = recivedPythonData[0];
   char secondCharacter = recivedPythonData[1];
-  char thirdCharacter = recivedPythonData
+  char thirdCharacter = recivedPythonData[2];
 
     if (firstCharacter == 'G')
     {
@@ -55,7 +55,7 @@ void loop ()
       
       if (autoHomeStatus == true)
       {
-        sendToPython(" AUTOHOME COMPLET")
+        sendToPython(" AUTOHOME COMPLET");
       }
     }
     if (firstCharacter == 'M' && secondCharacter == '2')
