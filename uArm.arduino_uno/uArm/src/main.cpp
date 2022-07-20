@@ -1,15 +1,3 @@
-/* 
- *  src code 4 uArm
- *    main.cpp
- * 
- *  Created on: 2022-May-26
- *        Dev : segin
- * 
- *  Ongoing-devlopment
- * 
- *  GNU General Public License v3.0 
- */
-
 # include <Arduino.h>
 # include <LibPrintf.h>
 # include <PID_v1.h>
@@ -18,6 +6,8 @@
 
 int myPos = 90;
 int dealyTime = 9;
+
+
 
 const uint8_t endLimitPin1 = 2;
 const uint8_t endlimitPin2 = 3;
