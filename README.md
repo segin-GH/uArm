@@ -15,16 +15,18 @@ movement of the arm and an additional mini servo attached to the end-effector th
 and rotates the object you are lifting with your chosen manipulator. 
 
   uArm's hardware can be divided into two main sections upper and lower section.
-Upper section consists of upper-Arm, fore-Arm, end-effector as (Fig 1.1 Upper section)
+Upper section consists of upper-Arm, fore-Arm, end-effector as (Fig)
 these parts together make movements in the Z-plane. Lower section consists of a geared
 dc motor, gear’s, baseplate, servo-baseplate, end-limit switch, lower section together
 makes movement in the x-y plane thus we get a 3d workspace. Most of the parts are made
-from 3d printing than injection moulding
+from 3d printing than injection moulding.
 
 ![uArm](https://user-images.githubusercontent.com/98380527/180050831-e6d4adea-4754-4aac-9871-fa9beff52086.png)
 
+                                            Orthographic view of uArm
 
 ![Screenshot (20)](https://user-images.githubusercontent.com/98380527/180050973-67bcc290-34f4-4632-9df5-aab987214a50.png)
 
+                                            
 
 ![Screenshot (23)](https://user-images.githubusercontent.com/98380527/180051029-9b99a688-f70d-4e99-8737-a5db113aec52.png)
