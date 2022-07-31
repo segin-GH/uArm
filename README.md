@@ -9,7 +9,7 @@ for more img of uArm -> https://drive.google.com/drive/folders/17gJa3lgiilu8ShVl
 
 for working video's  of uArm-> https://drive.google.com/drive/folders/16wUJtdwqpzQ62BLKxAko0icIkh08AQrm?usp=sharing
 
-..........................
+
   The uArm is an Arduino-powered, 4-axis robot arm that has been modelled after
 industrial pallet packing and car building robots which can be set up and used straight off
 your desktop. Each uArm is equipped with three digital servos to control the basic
@@ -23,7 +23,7 @@ these parts together make movements in the Z-plane. Lower section consists of a 
 dc motor, gear’s, baseplate, servo-baseplate, end-limit switch, lower section together
 makes movement in the x-y plane thus we get a 3d workspace. Most of the parts are made
 from 3d printing than injection moulding.
-............................
+
 
 ![uArm](https://user-images.githubusercontent.com/98380527/180050831-e6d4adea-4754-4aac-9871-fa9beff52086.png)
 
