@@ -25,7 +25,7 @@ makes movement in the x-y plane thus we get a 3d workspace. Most of the parts ar
 from 3d printing than injection moulding.
 
 
-# for more detailed report -> https://drive.google.com/file/d/15zHKk-c8EHMjLotmPiUwtn9KdIycKmUn/view?usp=sharing
+ for more detailed report -> https://drive.google.com/file/d/15zHKk-c8EHMjLotmPiUwtn9KdIycKmUn/view?usp=sharing
 
 
 ![uArm](https://user-images.githubusercontent.com/98380527/180050831-e6d4adea-4754-4aac-9871-fa9beff52086.png)
