@@ -1,5 +1,5 @@
 # uArm
-# a simple but complicated robotic arm
+# A simple but complicated robotic arm
 
 
   uArm is a 4-axis parallel-mechanism robot arm, inspired by the ABB Pallet Pack industrial robot arm.  uArm is a desktop type robotic arms which is developed for makers, STEM and education purposes. Which is Based on Arduino and of the shelf parts. uArm is open sourced and DIY friendly. It can be used by students to learn robotics, cad modelling, programming, and electronics. It can be used makers to do all cool things e.g., using as third hand when soldering. uArm supports Arduino, Python. No matter what level of a maker you are, you will have a lot of fun learning with uArm.  
@@ -30,17 +30,9 @@ from 3d printing than injection moulding.
 
 ![uArm](https://user-images.githubusercontent.com/98380527/180050831-e6d4adea-4754-4aac-9871-fa9beff52086.png)
 
-                                            Orthographic view of uArm
 
 ![Screenshot (20)](https://user-images.githubusercontent.com/98380527/180050973-67bcc290-34f4-4632-9df5-aab987214a50.png)
-
-                                            Orthographic view of upper-section                                   
+                                   
 
 ![Screenshot (23)](https://user-images.githubusercontent.com/98380527/180051029-9b99a688-f70d-4e99-8737-a5db113aec52.png)
-                                          
-                                          Orthographic view of lower-section
 
-
-
-
-                                          
